@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Coche {
+private:
+    string marca;
+    string modelo;
+    int anioFabricacion;
+
+public:
+    Coche(string m, string mod, int a) {
+        marca = m;
+        modelo = mod;
+        anioFabricacion = a;
+    }
+
+    string getMarca() {
+        return marca;
+    }
+
+    void setMarca(string m) {
+        marca = m;
+    }
+
+    int calcularAnios(int anioActual) {
+        return anioActual - anioFabricacion;
+    }
+};
+
+int main() {
+    return 0;
+}
