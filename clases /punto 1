@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Persona {
+private:
+    string nombre;
+    int edad;
+    float altura;
+
+public:
+    Persona(string n, int e, float a) {
+        nombre = n;
+        edad = e;
+        altura = a;
+    }
+
+    string getNombre() { return nombre; }
+    int getEdad() { return edad; }
+    float getAltura() { return altura; }
+
+    void setNombre(string n) { nombre = n; }
+    void setEdad(int e) { edad = e; }
+    void setAltura(float a) { altura = a; }
+};
+
+int main() { return 0; }
