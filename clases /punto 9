@@ -2,27 +2,23 @@
 #include <string>
 using namespace std;
 
-class Tienda {
+class Empleado {
 private:
     string nombre;
-    string productos[100];
-    int cantidad;
+    int edad;
+    float salario;
+    string cargo;
 
 public:
-    Tienda(string n) {
+    Empleado(string n, int e, float s, string c) {
         nombre = n;
-        cantidad = 0;
+        edad = e;
+        salario = s;
+        cargo = c;
     }
 
-    void agregarProducto(string p) {
-        productos[cantidad] = p;
-        cantidad++;
-    }
-
-    void eliminarProducto() {
-        if (cantidad > 0) {
-            cantidad--;
-        }
+    float salarioAnual() {
+        return salario * 12;
     }
 };
 
