@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Banco {
+private:
+    string nombre;
+    float tasa;
+
+public:
+    Banco(string n, float t) {
+        nombre = n;
+        tasa = t;
+    }
+
+    float calcularInteres(float dinero) {
+        return dinero * tasa;
+    }
+
+    int duplicarDinero(float dinero) {
+        int anios = 0;
+        while (dinero < dinero * 2) {
+            dinero += dinero * tasa;
+            anios++;
+        }
+        return anios;
+    }
+};
+
+int main() { return 0; }
