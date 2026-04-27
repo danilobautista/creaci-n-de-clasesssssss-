@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Tienda {
+private:
+    string nombre;
+    string productos[100];
+    int cantidad;
+
+public:
+    Tienda(string n) {
+        nombre = n;
+        cantidad = 0;
+    }
+
+    void agregarProducto(string p) {
+        productos[cantidad] = p;
+        cantidad++;
+    }
+
+    void eliminarProducto() {
+        if (cantidad > 0) {
+            cantidad--;
+        }
+    }
+};
+
+int main() { return 0; }
