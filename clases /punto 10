@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Libro {
+private:
+    string titulo;
+    string autor;
+    string genero;
+    int paginas;
+
+public:
+    Libro(string t, string a, string g, int p) {
+        titulo = t;
+        autor = a;
+        genero = g;
+        paginas = p;
+    }
+
+    bool esFiccion() {
+        if (genero == "ficcion") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+};
+
+int main() { return 0; }
